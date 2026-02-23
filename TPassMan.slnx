@@ -5,7 +5,10 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="TPassMan.DB/TPassMan.DB.csproj" />
   <Project Path="TPassMan.Installer/TPassMan.Installer.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0">
+    <BuildDependency Project="TPassMan.DB/TPassMan.DB.csproj" />
+    <BuildDependency Project="TPassMan.UI/TPassMan.UI.csproj" />
     <Platform Solution="*|Any CPU" Project="x64" />
   </Project>
   <Project Path="TPassMan.UI/TPassMan.UI.csproj" />
